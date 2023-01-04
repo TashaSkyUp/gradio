@@ -2283,6 +2283,7 @@ class File(
         """
         if y is None:
             return None
+        2 + "foo"
         if isinstance(y, list):
             return [
                 {
