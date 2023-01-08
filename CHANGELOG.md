@@ -1,11 +1,12 @@
 # Upcoming Release 
 
 ## New Features:
-
 No changes to highlight.
 
 ## Bug Fixes:
-No changes to highlight.
+* Fixed bug where `mount_gradio_app` would not launch if the queue was enabled in a gradio app by [@freddyaboulton](https://github.com/freddyaboulton) in [PR 2939](https://github.com/gradio-app/gradio/pull/2939) 
+* Fix custom long CSS handling in Blocks by [@anton-l](https://github.com/anton-l) in [PR 2953](https://github.com/gradio-app/gradio/pull/2953)
+- Recovers the dropdown change event by [@abidlabs](https://github.com/abidlabs) in [PR 2954](https://github.com/gradio-app/gradio/pull/2954).
 
 ## Documentation Changes:
 No changes to highlight.
@@ -22,7 +23,32 @@ No changes to highlight.
 ## Contributors Shoutout:
 No changes to highlight.
 
-# Version 3.15.0
+
+# Version 3.16.1
+
+## New Features:
+
+No changes to highlight.
+
+## Bug Fixes:
+- Fix audio file output by [@aliabid94](https://github.com/aliabid94) in [PR 2950](https://github.com/gradio-app/gradio/pull/2950).
+
+## Documentation Changes:
+No changes to highlight.
+
+## Testing and Infrastructure Changes:
+No changes to highlight.
+
+## Breaking Changes:
+No changes to highlight.
+
+## Full Changelog:
+No changes to highlight.
+
+## Contributors Shoutout:
+No changes to highlight.
+
+# Version 3.16.0
 
 ## New Features:
 
