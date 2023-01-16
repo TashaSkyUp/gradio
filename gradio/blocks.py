@@ -427,8 +427,9 @@ class Blocks(BlockContext):
 
     Example:
         import gradio as gr
-        def update(name):
-            return f"Welcome to Gradio, {name}!"
+        def update(comps):
+            name = comps[inp]
+            return {out, f"Welcome to Gradio, {name}!"} 
 
         with gr.Blocks() as demo:
             gr.Markdown("Start typing below and then click **Run** to see the output.")
@@ -436,7 +437,9 @@ class Blocks(BlockContext):
                 inp = gr.Textbox(placeholder="What is your name?")
                 out = gr.Textbox()
             btn = gr.Button("Run")
-            btn.click(fn=update, inputs=inp, outputs=out)
+            set_of_comps={imp, out}
+            btn.click(fn=update, inputs=set_of_comps, outputs=set_of_comps)
+            
 
         demo.launch()
     Demos: blocks_hello, blocks_flipper, blocks_speech_text_sentiment, generate_english_german, sound_alert
